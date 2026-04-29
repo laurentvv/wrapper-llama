@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wrapper-llama"
+version = "0.1.0"
+description = "Python wrapper to manage llama-server (llama.cpp) lifecycle"
+readme = "PROJET.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = ["llama", "llama.cpp", "llm", "wrapper"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.optional-dependencies]
+dev = ["python-dotenv"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wrapper_llama"]
