@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "wrapper-llama"
 version = "0.1.0"
 description = "Python wrapper to manage llama-server (llama.cpp) lifecycle"
-readme = "PROJET.md"
+readme = "README.md"
 requires-python = ">=3.9"
 license = "MIT"
 keywords = ["llama", "llama.cpp", "llm", "wrapper"]
